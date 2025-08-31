@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 class Customer {
-    private static int counter = 1; // Auto-increment number
+    private static int counter = 1;
     private int number;
     private String name;
 
@@ -45,7 +45,7 @@ public class BankQueue {
             System.out.println("4. Exit");
             System.out.print("Enter choice: ");
             choice = scanner.nextInt();
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -83,7 +83,6 @@ public class BankQueue {
         scanner.close();
     }
 
-    // Helper method to display queue
     private static void displayQueue(Queue<Customer> queue) {
         if (queue.isEmpty()) {
             System.out.println("Queue is empty.");
@@ -92,4 +91,5 @@ public class BankQueue {
         }
     }
 }
+
 
